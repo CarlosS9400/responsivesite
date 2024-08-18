@@ -65,7 +65,7 @@ body {
 .top-background {
     width: 90vw;
     padding: 2em 0em;
-    margin: 0 0em;
+    margin: 0 10em;
     background-image: url("../images/background.jpg");
     background-size: cover;
     
