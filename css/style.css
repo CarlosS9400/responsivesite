@@ -1,0 +1,225 @@
+
+html, 
+body {
+    /* initial settings */
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Moderustic", sans-serif;
+    text-align: center;
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+.the-top {
+    margin: 0.5em auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-left {
+   
+    display: flex;
+    border-radius: 1em;
+    width: 10em;
+    height: 3em;
+    gap: 1em;
+}
+
+.the-top .logo {
+    max-width: 20%;
+}
+
+.the-top h4 {
+    color: #1d59c6;
+    text-shadow: none;
+}
+
+.top-right h4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    
+}
+
+.top-right h4 a {
+    color: #1d59c6;
+    text-decoration: none;
+}
+
+.top-right h4 a:hover,
+.top-right h4 a:active {
+    opacity: 0.5;
+}
+
+.top-background {
+    width: 90vw;
+    padding: 2em 0em;
+    margin: 0 0em;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    
+    
+    
+}
+
+.top-roadmap h1 {
+    margin: 0 1em;
+}
+
+h3 {
+    text-shadow: 3px -3px 1px gray;
+}
+
+h3 a {
+    text-decoration: none;
+}
+
+.main-home {
+    
+    max-width: 90vw;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* this put the containing card in the center */
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.main-home .skills{ 
+    
+    color: whitesmoke;
+    background-color: #1d59c6;
+    border: 2px solid black;
+    border-radius: 10%;
+    text-align: left;
+    max-width: 50%;
+    max-height: 70%;
+
+    box-shadow: 5px 5px 5px black;
+    padding: 2em;
+}
+
+span {
+    display: block;
+    color:  whitesmoke;
+}
+
+h1, h2, h3 a, h4 {
+   
+    color: whitesmoke;
+    
+}
+
+.instruction, 
+.reason h2, 
+.reason p {
+    color: #1d59c6;
+}
+
+.reason h2, 
+.reason p {
+    
+    margin: 1em auto;
+    padding: 0 2em;
+    max-width: 750px;
+    margin-top: 1em;
+}
+
+.reason h2 {
+    text-align: center;
+}
+
+.reason p {
+    text-align: left;
+}
+
+.reason table {
+    margin: 0 auto;
+}
+
+.reason table td,
+.reason table th {
+    padding: 1em;
+    text-align: left;
+    color: #1d59c6;
+}
+
+
+
+
+
+h1 {
+    text-shadow: 5px -5px 1px gray;
+    margin-top: 2em;
+}
+
+.main-home .skills p, .reason p {
+    line-height: 1.5;
+    word-spacing: 0.3em;
+}
+
+.main-home img {
+    object-fit: cover;
+    width: 95%;
+    height: auto;
+    border-radius: 10%;
+    display: block;
+    margin: 0.5em auto;
+    cursor: pointer;
+}
+
+.copyright {
+    margin-top: -1em;
+}
+
+.view-more h3 a {
+    color: #1d59c6;
+    text-shadow: none;
+}
+
+footer {
+    background-color:  #1d59c6;
+    width: 100vw;
+    height: auto;
+    padding: 0.5em 0;
+    
+}
+
+
+@media (min-width: 769px) {
+
+
+    
+
+    .main-home .skills {
+       height: 45vh;
+       max-width: 25vw;
+       overflow: auto;
+       padding: 1em;
+      
+    }
+
+    .top-roadmap {
+        top: 10em;
+    }
+
+    .top-roadmap h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        
+    }
+
+}
+
+
+
