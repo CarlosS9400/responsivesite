@@ -20,7 +20,7 @@ body {
     
     margin: 0.5em auto;
     padding: 0.5em;
-    max-width: 100%;
+    max-width: 90vw;
     display: flex;
     /* put the items on each side */
     justify-content: space-between;
@@ -39,17 +39,21 @@ body {
     max-width: 20%;
 }
 
-.top-left h4 {
+.top-left h5 {
     
     color: #1d59c6;
     text-shadow: none;
 }
 
-.top-right h4 {
+.top-right h5 {
     display: flex;
     justify-content: space-between;
-    gap: 1em;
+    gap: 0.5em;
     
+}
+
+.top-right {
+    max-width: 500px;
 }
 
 .top-right h4 a {
@@ -64,8 +68,8 @@ body {
 
 .top-background {
     width: 90vw;
-    padding: 2em 0em;
-    margin: 0 10em;
+    padding: 0.5em 0em;
+    margin: 0 0.5em;
     background-image: url("../images/background.jpg");
     background-size: cover;
     
