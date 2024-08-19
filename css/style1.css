@@ -1,0 +1,149 @@
+/*index*/
+body {
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+.top-left h5,
+.top-right h5 a,
+.instruction,
+.view-more h3 a {
+   
+    color: whitesmoke;
+}
+
+/* layout */
+
+.main-home {
+    
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    
+    grid-template-areas: 
+    "... html ..."
+    "... css ..."
+    "... java ..."
+    "... reac ..."
+    "... webd ..."
+    "... wfrp ...";
+}
+
+.main-home .skills {
+    background: rgba(255, 255,255,.1);
+    box-shadow: 5px -5px 5px red;
+    border-radius: 50px;
+    border: 2px solid rgba(255,255,255, .5);
+    
+    height: 30vh;
+    margin: 1em;
+    padding: 1.5em;
+    overflow: auto;
+    color: whitesmoke;
+    text-align: left;
+}
+
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}
+
+.java {
+    grid-area: java;
+}
+
+.reac {
+    grid-area: reac;
+}
+
+.webd {
+    grid-area: webd;
+}
+
+.wfrp {
+    grid-area: wfrp;
+}
+
+/*why*/
+.reason {
+    max-width: 90vw;
+}
+
+.reason h2,
+.reason p {
+    color: whitesmoke
+}
+
+.reason table td,
+.reason table th {
+    color: whitesmoke
+}
+
+.text-image img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    float: left;
+    margin-right: 1em;
+    border-radius: 20%;
+}
+
+.skills a img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    border-radius: 20%;
+    
+    float: left;
+    margin-right: 15px;
+}
+
+.skill h2{
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .main-home {
+    grid-template-columns: repeat(3, minmax(30%, 1fr));
+     
+    grid-template-areas: 
+    "html css java"
+    "reac webd wfrp";
+
+    }
+
+    .skills a img {
+        max-width: 50%;
+        max-height: 50%;
+        object-fit: contain;
+        float: left;
+        margin-right: 15px;
+        transform: rotate(-3deg);
+    }
+
+    .main-home .skills {    
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+}

@@ -56,27 +56,30 @@ body {
     max-width: 500px;
 }
 
-.top-right h4 a {
+.top-right h5 a {
     color: #1d59c6;
     text-decoration: none;
 }
 
-.top-right h4 a:hover,
-.top-right h4 a:active {
+.top-right h5 a:hover,
+.top-right h5 a:active {
     opacity: 0.5;
 }
 
 .top-background {
     width: 90vw;
+    height: 35vh;
     padding: 0.5em 0em;
     margin: 0 0.5em;
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/banner.jpg");
+    border-radius: 10%;
     background-size: cover;
     
 }
 
 h1 {
-    text-shadow: 3px -3px 1px gray;
+
+    text-shadow: 3px -3px 1px black;
     margin-top: 2em;
 }
 
@@ -103,30 +106,18 @@ h3 a {
     
 }
 
-.main-home .skills{ 
-    
-    color: whitesmoke;
-    background-color: #1d59c6;
-    border: 2px solid black;
-    border-radius: 10%;
-    text-align: left;
-    max-width: 80%;
-    max-height: 80%;
-
-    box-shadow: 5px 5px 5px black;
-    padding: 2em;
-}
-
 span {
     display: block;
-    color:  whitesmoke;
+    color:  gold;
 }
 
-h1, h2, h3 a, h4 {
+ h1, h2, h3 a, h4 {
    
     color: whitesmoke;
     
 }
+
+
 
 .instruction, 
 .reason h2, 
@@ -169,9 +160,10 @@ h1, h2, h3 a, h4 {
 }
 
 .main-home img {
+    
     object-fit: cover;
     width: 95%;
-    height: auto;
+    height: 95%;
     border-radius: 10%;
     display: block;
     margin: 0.5em auto;
@@ -194,29 +186,4 @@ footer {
     padding: 0.5em 0;
     
 }
-
-
-@media (min-width: 769px) {
-
-    .main-home .skills {
-       height: 45vh;
-       max-width: 25vw;
-       overflow: auto;
-       padding: 1em;
-      
-    }
-
-    .top-roadmap {
-        top: 10em;
-    }
-
-    .top-roadmap h1 {
-        font-size: 2rem;
-        font-weight: bold;
-        
-    }
-
-}
-
-
 
