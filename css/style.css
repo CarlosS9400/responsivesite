@@ -94,7 +94,10 @@ h1 {
 
 .main-home {
     
+
     max-width: 900px;
+    margin: auto;
+    
     display: grid;
     grid-template-columns: 1em 1fr 1em;
     
@@ -147,7 +150,7 @@ h1 {
 }
 
 /*why*/
-/*
+
 .reason {
     max-width: 90vw;
 }
