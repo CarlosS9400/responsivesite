@@ -232,6 +232,12 @@ footer {
 
 
 @media (min-width: 769px) {
+
+    body {
+        font-size: 16px;
+
+    }
+    
     .main-home {
     grid-template-columns: repeat(3, minmax(30%, 1fr));
      
