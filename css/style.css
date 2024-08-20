@@ -22,7 +22,7 @@ header {
 
 
 .the-top {
- 
+    background: gray;
     margin: 0.5em auto;
     padding: 0.5em;
     width: 85%;
@@ -95,7 +95,7 @@ header {
 h1 {
 
     text-shadow: 3px -3px 1px black;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 h3 {
@@ -197,6 +197,7 @@ span {
 footer {
     background-color:  #1d59c6;
     width: 100vw;
+    max-width: 900px;
     height: auto;
     padding: 0.5em 0;
     
