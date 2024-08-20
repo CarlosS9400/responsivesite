@@ -38,7 +38,7 @@ header {
     display: flex;
     align-items: center;
     gap: 1em;
-    width: 40%;
+    width: 35%;
     padding: 0.5em;
 }
 
@@ -54,7 +54,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 60%;
+    width: 65%;
     padding: 0.5em;
 }
 
