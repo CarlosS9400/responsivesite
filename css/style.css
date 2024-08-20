@@ -38,14 +38,14 @@ header {
     display: flex;
     align-items: center;
     gap: 1em;
-    width: 35%;
+    width: 45%;
     padding: 0.5em;
 }
 
 .logo {
     border-radius: 50%;
-    width: 10%;
-    height: 10%;
+    width: 12%;
+    height: 12%;
 }
 
 .top-right {
@@ -54,12 +54,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 65%;
-    padding: 0.5em;
+    width: 55%;
+    padding: 0.2em;
 }
 
 .top-right h4 a {
-    margin-left: 1em;
+    margin-left: 0.5em;
+    text-decoration: none;
 }
 
 .top-background {
@@ -223,6 +224,8 @@ footer {
     padding: 0.5em 0;
     
 }
+
+
 
 @media (min-width: 769px) {
     .main-home {
