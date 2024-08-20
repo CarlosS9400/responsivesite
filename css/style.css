@@ -19,7 +19,7 @@ img {
 
 header {
     width: 90%;
-    background: gray;
+    
     max-width: 1200px;
     margin: 0 auto;
     padding: 1em 0;
@@ -32,7 +32,7 @@ header {
 
 
 .top-left {
-    background-color: blue;
+   
     align-self: self-start;
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@ header {
 }
 
 .top-right {
-    background-color: green;
+   
     align-self: flex-end;
     display: flex;
     align-items: center;
@@ -60,6 +60,7 @@ header {
 .top-right h4 a {
     margin-left: 1em;
 }
+
 .top-background {
     height: 250px;
     width: 100%;
@@ -79,13 +80,25 @@ h1 {
     font-weight: 900;
     letter-spacing: 0.1em;
     color: whitesmoke;
+    text-shadow: -5px -5px 5px red;
 }
+
+span {
+    display: block;
+}
+
 .top-left h4,
 .top-right h4 a,
 .instruction,
 .view-more h3 a {
    
     color: whitesmoke;
+}
+
+p {
+    text-align: left;
+    letter-spacing: 1.5;
+    line-height: 1.5;
 }
 
 
@@ -97,7 +110,7 @@ h1 {
 
     max-width: 900px;
     margin: auto;
-    
+
     display: grid;
     grid-template-columns: 1em 1fr 1em;
     
@@ -152,12 +165,20 @@ h1 {
 /*why*/
 
 .reason {
-    max-width: 90vw;
+    max-width: 900px;
+    margin: auto;
+
+    
 }
 
 .reason h2,
 .reason p {
     color: whitesmoke
+}
+
+table {
+    width: 30%;
+    margin: auto
 }
 
 .reason table td,
@@ -190,6 +211,15 @@ h1 {
     object-fit: contain;
     float: none;
     margin: 0 auto;
+}
+
+footer {
+    background-color:  #1d59c6;
+    color: whitesmoke;
+    width: 100vw;
+    height: auto;
+    padding: 0.5em 0;
+    
 }
 
 @media (min-width: 769px) {
