@@ -14,6 +14,7 @@ body {
 header {
    
     width: 100%;
+    max-width: 900px;
     margin: 0 auto;
     
    
@@ -25,6 +26,7 @@ header {
     margin: 0.5em auto;
     padding: 0.5em;
     width: 85%;
+    max-width: 900px;
     display: flex;
     /* put the items on each side */
     justify-content: space-between;
