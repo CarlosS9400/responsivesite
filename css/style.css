@@ -1,3 +1,4 @@
+/*index*/
 
 html, 
 body {
@@ -6,192 +7,219 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Moderustic", sans-serif;
-    background-color: whitesmoke;
+    background-color: darkgreen;
     font-size: 15px;
     text-align: center;
 }
 
-header {
-   
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    
-   
+img {
+    width: 50%;
 }
 
+
+header {
+    width: 90%;
+    background: gray;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em 0;
+}
 
 .the-top {
-    background: gray;
-    margin: 0.5em auto;
-    padding: 0.5em;
-    width: 85%;
-    max-width: 900px;
-    
-    /* put the items on each side */
-  
+    display: flex;
+    justify-content: space-between;
 }
 
-.top-left, .top-right {
-    display: inline-block; /* Aligns the sections side by side */
-    vertical-align: middle; /* Aligns the sections vertically */
-}
 
 .top-left {
-    background: yellow;
-    margin-right: 30em;
-   
+    background-color: blue;
+    align-self: flex-end;
+    display: flex;
+
+    width: 50%;
 }
-
-
-
-.top-left h4 {
-    
-    color: #1d59c6;
-    text-shadow: none;
-}
-
-
 
 .top-right {
-    background: green;
+    background-color: green;
+    align-self: flex-end;
+
+    width: 50%;
 }
 
-.top-right h4 a {
-    color: #1d59c6;
-    text-decoration: none;
-}
-
-.top-right h4 a:hover,
-.top-right h4 a:active {
-    opacity: 0.5;
+.logo {
+    border-radius: 30%;
+    max-width: 5%;
 }
 
 .top-background {
-    
-    
-    width: 90%;
-    max-width: 900px;
-    height: 35vh;
-    padding: 0.5em 0em;
-    margin: 0 auto;
-    background-image: url("../images/banner.jpg");
-    border-radius: 10%;
+    height: 250px;
+    width: 100%;
+    background-image: url(../images/banner.jpg);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    box-sizing: border-box;
-    
-}
+    background-position: bottom;
 
-h1 {
-
-    text-shadow: 3px -3px 1px black;
-    margin-top: 1em;
-}
-
-h3 {
-    text-shadow: 3px -3px 1px gray;
-}
-
-h3 a {
-    text-decoration: none;
-}
-
-.main-home {
-    
-    max-width: 90vw;
-    margin: 1em;
-    padding: 1em;
     display: flex;
-    flex-wrap: wrap;
-    
-    /* this put the containing card in the center */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
-    
 }
 
-span {
-    display: block;
-    color:  gold;
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color: whitesmoke;
 }
 
- h1, h2, h3 a, h4 {
+
+
+.top-left h4,
+.top-right h4 a,
+.instruction,
+.view-more h3 a {
    
     color: whitesmoke;
+}
+
+/*
+
+/* layout */
+/*
+.main-home {
     
-}
-
-
-
-.instruction, 
-.reason h2, 
-.reason p {
-    color: #1d59c6;
-}
-
-.reason h2, 
-.reason p {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
     
-    margin: 1em auto;
-    padding: 0 2em;
-    max-width: 750px;
-    margin-top: 1em;
+    grid-template-areas: 
+    "... html ..."
+    "... css ..."
+    "... java ..."
+    "... reac ..."
+    "... webd ..."
+    "... wfrp ...";
 }
 
-.reason h2 {
-    text-align: center;
-}
-
-.reason p {
+.main-home .skills {
+    background: rgba(255, 255,255,.1);
+    box-shadow: 5px -5px 5px red;
+    border-radius: 50px;
+    border: 2px solid rgba(255,255,255, .5);
+    
+    height: 30vh;
+    margin: 1em;
+    padding: 1.5em;
+    overflow: auto;
+    color: whitesmoke;
     text-align: left;
 }
 
-.reason table {
-    margin: 0 auto;
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}
+
+.java {
+    grid-area: java;
+}
+
+.reac {
+    grid-area: reac;
+}
+
+.webd {
+    grid-area: webd;
+}
+
+.wfrp {
+    grid-area: wfrp;
+}
+
+/*why*/
+/*
+.reason {
+    max-width: 90vw;
+}
+
+.reason h2,
+.reason p {
+    color: whitesmoke
 }
 
 .reason table td,
 .reason table th {
-    padding: 1em;
-    text-align: left;
-    color: #1d59c6;
+    color: whitesmoke
 }
 
-
-.main-home .skills p, .reason p {
-    line-height: 1.5;
-    word-spacing: 0.3em;
+.text-image img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    float: left;
+    margin-right: 1em;
+    border-radius: 20%;
 }
 
-.main-home img {
+.skills a img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    border-radius: 20%;
     
-    object-fit: cover;
-    width: 95%;
-    height: 95%;
-    border-radius: 10%;
-    display: block;
-    margin: 0.5em auto;
-    cursor: pointer;
+    float: left;
+    margin-right: 15px;
 }
 
-.copyright {
-    margin-top: -1em;
+.wfrp a img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    float: none;
+    margin: 0 auto;
 }
 
-.view-more h3 a {
-    color: #1d59c6;
-    text-shadow: none;
-}
+@media (min-width: 769px) {
+    .main-home {
+    grid-template-columns: repeat(3, minmax(30%, 1fr));
+     
+    grid-template-areas: 
+    "html css java"
+    "reac webd wfrp";
 
-footer {
-    background-color:  #1d59c6;
-    width: 100vw;
-    max-width: 900px;
-    height: auto;
-    padding: 0.5em 0;
-    
-}
+    }
 
+    .skills a img {
+        max-width: 50%;
+        max-height: 50%;
+        object-fit: contain;
+        float: left;
+        margin-right: 15px;
+        transform: rotate(-3deg);
+    }
+
+    .main-home .skills {    
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .wfrp a img {
+        max-width: 60%;
+        max-height: 60%;
+        min-width: 50%;
+        min-height: 50%;
+        object-fit: contain;
+        float: none;
+        margin: 1em auto;
+    }
+
+}
