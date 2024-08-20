@@ -7,9 +7,10 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Moderustic", sans-serif;
-    background-color: darkgreen;
+    background-color: #2c3e50;
     font-size: 15px;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 img {
@@ -96,8 +97,8 @@ span {
 }
 
 p {
+
     text-align: left;
-    letter-spacing: 1.5;
     line-height: 1.5;
     margin: 1em;
 }
