@@ -27,24 +27,23 @@ header {
     padding: 0.5em;
     width: 85%;
     max-width: 900px;
-    display: flex;
-    /* put the items on each side */
-    justify-content: space-between;
     
-   
+    /* put the items on each side */
+  
+}
+
+.top-left, .top-right {
+    display: inline-block; /* Aligns the sections side by side */
+    vertical-align: middle; /* Aligns the sections vertically */
 }
 
 .top-left {
     background: yellow;
-    display: flex;
-    max-width: 300px;
-    height: 3em;
-    gap: 1em;
+    margin-right: 30em;
+   
 }
 
-.the-left .logo {
-    max-width: 20%;
-}
+
 
 .top-left h4 {
     
@@ -52,12 +51,7 @@ header {
     text-shadow: none;
 }
 
-.top-right h4 {
-    max-width: 300px;
-    
-   
-    
-}
+
 
 .top-right {
     background: green;
