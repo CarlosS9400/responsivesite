@@ -33,23 +33,35 @@ header {
 
 .top-left {
     background-color: blue;
-    align-self: flex-end;
+    align-self: self-start;
     display: flex;
-
+    align-items: center;
+    gap: 1em;
     width: 50%;
+    padding: 0.5em;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 5%;
+    height: 5%;
 }
 
 .top-right {
     background-color: green;
     align-self: flex-end;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     width: 50%;
+    padding: 0.5em;
 }
 
-.logo {
-    border-radius: 30%;
-    max-width: 5%;
+.top-right h4 a {
+    margin-left: 1em;
 }
+
+
 
 .top-background {
     height: 250px;
