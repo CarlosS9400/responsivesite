@@ -225,6 +225,10 @@ footer {
     
 }
 
+.instruction {
+    margin: 1em;
+}
+
 
 
 @media (min-width: 769px) {
