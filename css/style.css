@@ -55,14 +55,15 @@ header {
 .top-right h4 {
     max-width: 300px;
     
-    display: flex;
-    justify-content: space-between;
-    gap: 1em;
+   
     
 }
 
 .top-right {
-    max-width: 600px;
+    background: green;
+    
+    
+    
 }
 
 .top-right h4 a {
