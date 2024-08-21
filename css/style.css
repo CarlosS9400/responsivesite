@@ -176,7 +176,8 @@ p {
 
 .reason h2,
 .reason p {
-    color: whitesmoke
+    color: whitesmoke;
+    margin: 1.5em;
 }
 
 table {
@@ -195,6 +196,7 @@ table {
     object-fit: contain;
     float: left;
     margin-right: 1em;
+    margin-bottom: 1em;
     border-radius: 20%;
 }
 
@@ -237,7 +239,7 @@ footer {
         font-size: 16px;
 
     }
-    
+
     .main-home {
     grid-template-columns: repeat(3, minmax(30%, 1fr));
      
@@ -253,6 +255,7 @@ footer {
         object-fit: contain;
         float: left;
         margin-right: 15px;
+        margin-bottom: 1em;
         transform: rotate(-3deg);
     }
 
